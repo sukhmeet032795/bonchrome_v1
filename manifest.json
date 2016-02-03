@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bon Voyage",
+  "description": "Ever",
+  "version": "0.0.1",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "browser_action": {
+    "default_icon": "logo_custom.jpg",
+    "default_popup": "index.html"
+  },
+
+  "icons": { 
+    "16": "logo_custom.jpg",
+    "48": "logo_custom.jpg"
+  },
+
+  "permissions": [
+    "http://127.0.0.1:8000/*",
+    "history"
+  ]
+}
