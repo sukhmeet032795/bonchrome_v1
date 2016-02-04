@@ -2,7 +2,7 @@
 	<head>
 		<link rel='stylesheet' href='dependencies/materialize.min.css'>
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-
+		<link href="index.css" rel="stylesheet" type="text/css">
 	</head>
 	<body style="width:600px;height:600px;">
 		<div class="container">
@@ -97,6 +97,27 @@
 			</div>
 		</div>
 
+		<div class="loader">
+  			<div class="dots">
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			  <defs>
+			    <filter id="goo">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+			      <feBlend in="SourceGraphic" in2="goo" />
+			  	</filter>
+			  </defs>
+			</svg>
+			<p class="text">Loading...Please Wait....</p>
+		</div>
+		
 		<script src="dependencies/jquery-2.1.4.min.js"></script>
 		<script src="dependencies/materialize.min.js"></script>
 		<script src="index.js"></script>

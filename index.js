@@ -161,6 +161,7 @@ function main (){
 						
 							$('tbody').append(div)
 						}
+						$('.loader').css("display","none");
 					}
 				});
 			}
